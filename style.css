@@ -46,11 +46,11 @@ video{
 
 }
 .card-back {
-	background-image: url("./img/front.png");
+	background-image: url("./img/back.png");
 	transform: rotateX(-180deg);
 }
 .card-front {
-	background-image: url("./img/back.png");
+	background-image: url("./img/front.png");
 	transform: rotateX(0deg);
 }
 .card:hover .card-front {
