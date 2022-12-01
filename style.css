@@ -109,6 +109,7 @@ video{
 	backface-visibility: hidden;
 
 }
+.card.active .card-front,
 .card:hover .card-front,
 .card:active .card-front {
 	transform: rotateX(180deg);
@@ -116,6 +117,7 @@ video{
 	backface-visibility: hidden;
 
 }
+.card.active .card-back,
 .card:hover .card-back,
 .card:active .card-back {
 	transform: rotateX(0deg);
