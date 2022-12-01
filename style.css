@@ -89,6 +89,7 @@ video{
 	background-size: cover;
 	top: 0;
 	left: 0;
+	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: flex;
 	transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
