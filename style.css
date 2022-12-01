@@ -110,16 +110,16 @@ video{
 
 }
 .card.active .card-front,
-.card:hover .card-front,
-.card:active .card-front {
+.card:not(.touch):hover .card-front,
+.card:not(.touch):active .card-front {
 	transform: rotateX(180deg);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 
 }
 .card.active .card-back,
-.card:hover .card-back,
-.card:active .card-back {
+.card:not(.touch):hover .card-back,
+.card:not(.touch):active .card-back {
 	transform: rotateX(0deg);
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
