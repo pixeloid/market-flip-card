@@ -4,25 +4,10 @@
 	box-sizing: border-box;
 }
 
-body, html {
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-.content {
-	overflow: hidden;
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-}
 @keyframes bounce{
-	0%   { transform: translate(-50%,0); }
-	50%  { transform: translate(-50%,-40px); }
-	100% { transform: translate(-50%,0); }
+	0%   { transform: translateY(0); }
+	50%  { transform: translateY(-40px); }
+	100% { transform: translateY(0); }
 }
 
 body.loading .logo {
@@ -80,7 +65,7 @@ video{
 
 
 .card-content {
-	border-radius: 4vh;
+	border-radius: 3vh;
 	box-shadow: 8px 8px 16px rgba(0,0,0,0.3);
 	overflow: hidden;
 	width: 100%;
@@ -89,7 +74,6 @@ video{
 	background-size: cover;
 	top: 0;
 	left: 0;
-	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: flex;
 	transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -98,31 +82,16 @@ video{
 .card-back {
 	background-image: url("./img/back.png");
 	transform: rotateX(-180deg);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-
 }
 .card-front {
 	background-image: url("./img/front.png");
 	transform: rotateX(0deg);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-
 }
-.card.active .card-front,
-.card:not(.touch):hover .card-front,
-.card:not(.touch):active .card-front {
+.card.active .card-front {
 	transform: rotateX(180deg);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-
 }
-.card.active .card-back,
-.card:not(.touch):hover .card-back,
-.card:not(.touch):active .card-back {
-	transform: rotateX(0deg);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+.card.active .card-back {
+	transform: rotateX(0deg)
 }
 
 

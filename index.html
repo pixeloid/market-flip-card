@@ -11,13 +11,11 @@
 		window.onload = function(){ 
 			setTimeout(function(){
 				document.querySelector("body").classList.remove('loading');
-				if (isTouchDevice()) {
 					document.querySelector('.card').classList.add('touch')
 					document.querySelector('.card').addEventListener('click', function(el){
 			el.stopPropagation();
 						el.target.parentNode.classList.toggle('active');
 		 })
-				}
 			}, 1000)
 	 }
 
