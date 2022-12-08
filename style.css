@@ -47,6 +47,7 @@ video{
 }
 .card {
 	position: absolute;
+	cursor: pointer;
 	opacity: 1;
 	z-index: 10;
 	top: 50%;
