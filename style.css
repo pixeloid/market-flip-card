@@ -64,7 +64,7 @@ video{
 	transform-style: preserve-3d;
 	perspective: 200vh;
 	transition: 0.5s;
-	padding-top: 25%;
+	padding-top: 24%;
 	transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
